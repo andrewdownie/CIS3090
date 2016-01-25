@@ -1,0 +1,17 @@
+# Makefile for 3090 Assignment 1, Andrew Downie - 0786342
+
+PILOTHOME = /work/wgardner/pilot
+CC = mpicc
+CPPFLAGS += -I$(PILOTHOME)/include
+CFLAGS = -g -O2
+LDFLAGS += -L$(PILOTHOME)/lib -lpilot
+
+pal: pal.c pal.h
+	$(CC) $< $(LDFLAGS) -o $@
+
+clean:
+	rm log.out -f
+	rm pal.out -f
+	rm pal.out.sorted -f
+	rm pal -f
+	sleep 0.2
