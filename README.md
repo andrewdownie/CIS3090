@@ -1,3 +1,4 @@
+#(This project was moved from bitbucket.org)
 # CIS3090 - Parallel Programming
 # Andrew Downie - University of Guelph - 2015 Fall Semester
 # The general idea of this course was to write two versions of a program: a serial and a parallel version.
